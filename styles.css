@@ -1,0 +1,65 @@
+/*estilos para central el modal*/
+body {
+  font-family: 'Arial';
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+/*estilos al modal para que tenga aspecto de botón*/
+.abrir {
+  color: white;
+  text-decoration: none;
+  padding: 15px 50px;
+  border-radius: 2em;
+  background-color: blueviolet;
+}
+
+/*posición del modal*/
+.modal {
+  width: 100%;
+  position: fixed;
+  inset: 0;
+  background: #00000056;
+  display: flex;
+  transition: transform .5s; 
+  transform: translate(100%);
+}
+
+.modal:target {
+  transform: translate(0);
+}
+
+/*añadir ancho y alto al modal*/
+.modal_container {
+  position: relative;
+  width: 82%;
+  height: 55%;
+  background-color: white;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/*estilos del título*/
+.modal_titulo {
+  text-align: center;
+  font-size: 3rem;
+}
+
+/*posicionar el botón de cerrar*/
+.modal_cerrar {
+  position: absolute;
+  background-color: red;
+  top: 0;
+  right: 0;
+  width: 45px;
+  height: 45px;
+  text-align: center;
+  line-height: 40px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
